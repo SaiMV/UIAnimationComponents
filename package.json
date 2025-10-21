@@ -15,7 +15,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:lib": "rollup -c",
-    "dev": "ng serve --open",
+    "dev": "cd demo-ui && node serve.js --open",
     "demo": "cd demo-ui && node serve.js",
     "test": "jest",
     "lint": "eslint src --ext .ts,.tsx",
