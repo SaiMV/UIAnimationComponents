@@ -1,17 +1,16 @@
-import { Component } from '@angular/core';
-import { bootstrapApplication } from '@angular/platform-browser';
+// FinchesEye Animation Library - StackBlitz Demo
+// This file initializes the demo application
 
-@Component({
-  selector: 'app-root',
-  template: `
-    <h1>Hello from {{ name }}!</h1>
-    <a target="_blank" href="https://angular.dev/overview">
-      Learn more about Angular
-    </a>
-  `,
-})
-export class App {
-  name = 'Angular';
-}
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
 
-bootstrapApplication(App);
+// Initialize the demo when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+  // The demo UI is handled by the JavaScript in demo-ui/app.js
+  // This Angular app serves as the container
+  console.log('FinchesEye Animation Library Demo loaded');
+});
+
+// Bootstrap Angular (if needed for future Angular components)
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error('Error bootstrapping Angular:', err));

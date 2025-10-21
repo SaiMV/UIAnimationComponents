@@ -1,0 +1,25 @@
+{
+  "name": "fincheseye-animation-demo",
+  "version": "1.0.0",
+  "description": "Demo UI for FinchesEye Animation Library",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "serve": "npx serve .",
+    "dev": "npx live-server --port=8080 --open=/index.html"
+  },
+  "keywords": [
+    "animation",
+    "demo",
+    "ui",
+    "react",
+    "angular",
+    "vue"
+  ],
+  "author": "FinchesEye Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  }
+}

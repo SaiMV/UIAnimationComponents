@@ -26,13 +26,30 @@
             }
           },
           "options": {
-            "assets": [],
+            "assets": [
+              "demo-ui"
+            ],
             "index": "src/index.html",
             "browser": "src/main.ts",
             "outputPath": "dist/demo",
             "polyfills": ["zone.js"],
-            "scripts": [],
-            "styles": ["src/global_styles.css"],
+            "scripts": [
+              "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js",
+              "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js",
+              "https://unpkg.com/vue@3/dist/vue.global.js",
+              "https://unpkg.com/react@18/umd/react.development.js",
+              "https://unpkg.com/react-dom@18/umd/react-dom.development.js",
+              "dist/index.umd.js",
+              "demo-ui/app.js"
+            ],
+            "styles": [
+              "src/global_styles.css",
+              "demo-ui/styles.css",
+              "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css",
+              "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+              "https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800",
+              "https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900"
+            ],
             "tsConfig": "tsconfig.app.json"
           }
         },
